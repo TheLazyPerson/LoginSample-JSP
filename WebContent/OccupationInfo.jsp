@@ -22,7 +22,7 @@
 		<form class="form-signin" action="ResidentialInfo.jsp" method="post">
 			<h3 class="form-signin-heading">Create User Profile</h3>
 			
-			<h4 class="form-signin-heading">Enter Education Information</h4>
+			<h4 class="form-signin-heading">Enter Occupation Information</h4>
 			
 			<label for="inputCompany" class="sr-only">Company</label>
 			<input type="text" name="company" id="inputCompany" class="form-control" placeholder="Company Name" required autofocus>

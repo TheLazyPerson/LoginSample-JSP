@@ -20,8 +20,12 @@
 	</jsp:useBean>
 	<jsp:setProperty property="*" name="residential" />
 	<div class="container">
+		<form class="form-signin" action="Logout" method="post">
+			<button class="btn btn-sm btn-danger btn-block" type="submit">Logout</button>
+      	</form>
 		<form class="form-signin" action="Profile.jsp" method="post">
 			<h3 class="form-signin-heading">User Profile</h3>
+			
 			<h4 class="form-signin-heading">Education Information</h4>
 			<jsp:useBean id="education" class="com.bitwise.training.utils.EducationInformation"
 				scope="application">

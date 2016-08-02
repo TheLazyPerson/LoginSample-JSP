@@ -19,7 +19,7 @@
 				<button class="btn btn-default btn-primary btn-block" type="submit">Create Your Profile</button>
 	      	</form>
 			
-			<form class="form-signin" action="Login.jsp" method="post">
+			<form class="form-signin" action="Logout" method="post">
 				<button class="btn btn-sm btn-danger btn-block" type="submit">Logout</button>
 	      	</form>      	
 	    </div> <!-- /container -->
