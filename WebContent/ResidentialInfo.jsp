@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,19 +15,25 @@
 	<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+	<jsp:useBean id="occupation" class="com.bitwise.training.utils.OccupationInformation"
+		scope="application">
+	</jsp:useBean>
+
+	<jsp:setProperty property="*" name="occupation" />
+	
 	<div class="container">
 		<form class="form-signin" action="Profile.jsp" method="post">
 			<h3 class="form-signin-heading">Create User Profile</h3>
 			<h4 class="form-signin-heading">Enter Residence Information</h4>
 			
 			<label for="inputStreetName" class="sr-only">Street Name:</label>
-			<input type="text" id="inputStreetName" class="form-control" placeholder="Street Name" required>
+			<input type="text" name="street" id="inputStreetName" class="form-control" placeholder="Street Name" required>
 			<label for="inputCity" class="sr-only">City</label>
-			<input type="text" id="inputCity" class="form-control" placeholder="City" required autofocus>
+			<input type="text" name="city" id="inputCity" class="form-control" placeholder="City" required autofocus>
 			<label for="inputPinCode" class="sr-only">Pin Code:</label>
-			<input type="text" id="inputPinCode" class="form-control" placeholder="Pin COde" required>
+			<input type="text" name="pin" id="inputPinCode" class="form-control" placeholder="Pin COde" required>
 			<label for="inputState" class="sr-only">State:</label>
-			<input type="text" id="inputState" class="form-control" placeholder="State" required>
+			<input type="text" name="state" id="inputState" class="form-control" placeholder="State" required>
 			
 			<button class="btn btn-lg btn-primary " type="submit">Next</button>
       	

@@ -20,13 +20,13 @@
 			<h4 class="form-signin-heading">Enter Education Information</h4>
 			
 			<label for="inputCollege" class="sr-only">College Name</label>
-			<input type="text" id="inputCollege" class="form-control" placeholder="Collage Name" required autofocus>
+			<input type="text" name="college" id="inputCollege" class="form-control" placeholder="Collage Name" required autofocus>
 			<label for="inputDegree" class="sr-only">Degree:</label>
-			<input type="text" id="inputDegree" class="form-control" placeholder="Degree" required>
+			<input type="text" name="degree" id="inputDegree" class="form-control" placeholder="Degree" required>
 			<label for="inputGrade" class="sr-only">Grade:</label>
-			<input type="text" id="inputGrade" class="form-control" placeholder="Grade" required>
+			<input type="text" name="grade" id="inputGrade" class="form-control" placeholder="Grade" required>
 			
-			<button class="btn btn-lg btn-primary " type="submit">Next</button>
+			<button class="btn btn-lg btn-primary" type="submit">Next</button>
       	
       	</form>      	
     </div> <!-- /container -->

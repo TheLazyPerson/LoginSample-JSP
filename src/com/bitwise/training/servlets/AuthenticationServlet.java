@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 //@WebServlet("/AuthenticationServlet")
 public class AuthenticationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+    
     /**
      * @see HttpServlet#HttpServlet()
      */

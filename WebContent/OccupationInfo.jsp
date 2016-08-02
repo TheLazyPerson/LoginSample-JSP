@@ -13,6 +13,11 @@
 	<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+	<jsp:useBean id="education" class="com.bitwise.training.utils.EducationInformation"
+		scope="application">
+	</jsp:useBean>
+
+	<jsp:setProperty property="*" name="education" />
 	<div class="container">
 		<form class="form-signin" action="ResidentialInfo.jsp" method="post">
 			<h3 class="form-signin-heading">Create User Profile</h3>
@@ -20,11 +25,11 @@
 			<h4 class="form-signin-heading">Enter Education Information</h4>
 			
 			<label for="inputCompany" class="sr-only">Company</label>
-			<input type="text" id="inputCompany" class="form-control" placeholder="Company Name" required autofocus>
+			<input type="text" name="company" id="inputCompany" class="form-control" placeholder="Company Name" required autofocus>
 			<label for="inputDegree" class="sr-only">Designation:</label>
-			<input type="text" id="inputDegree" class="form-control" placeholder="Designation" required>
+			<input type="text" name="designation" id="inputDegree" class="form-control" placeholder="Designation" required>
 			<label for="inputSalary" class="sr-only">Salary:</label>
-			<input type="text" id="inputSalary" class="form-control" placeholder="Salary" required>
+			<input type="text" name="salary" id="inputSalary" class="form-control" placeholder="Salary" required>
 			
 			<button class="btn btn-lg btn-primary " type="submit">Next</button>
       	
