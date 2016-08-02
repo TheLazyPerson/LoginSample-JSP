@@ -10,6 +10,11 @@
 	<jsp-version>2.0</jsp-version>
 	<short-name>Example TLD</short-name>
 	<tag>
+		<name>PrintLoginMessages</name>
+		<tag-class>com.bitwise.training.utils.PrintLoginMessages</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
 		<name>SetForm</name>
 		<tag-class>com.bitwise.training.utils.SetCompleteFlag</tag-class>
 		<body-content>empty</body-content>

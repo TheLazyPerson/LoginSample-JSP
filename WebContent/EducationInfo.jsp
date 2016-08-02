@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -16,18 +17,20 @@
 	<div class="container">
 		<form class="form-signin" action="OccupationInfo.jsp" method="post">
 			<h3 class="form-signin-heading">Create User Profile</h3>
-			
 			<h4 class="form-signin-heading">Enter Education Information</h4>
 			
 			<label for="inputCollege" class="sr-only">College Name</label>
 			<input type="text" name="college" id="inputCollege" class="form-control" placeholder="Collage Name" required autofocus>
+			
 			<label for="inputDegree" class="sr-only">Degree:</label>
 			<input type="text" name="degree" id="inputDegree" class="form-control" placeholder="Degree" required>
-			<label for="inputGrade" class="sr-only">Grade:</label>
-			<input type="text" name="grade" id="inputGrade" class="form-control" placeholder="Grade" required>
 			
-			<button class="btn btn-lg btn-primary" type="submit">Next</button>
-      	
+			<label for="inputGrade" class="sr-only">Grade:</label>
+			<input type="number" name="grade" id="inputGrade" class="form-control" placeholder="Grade" required>
+			
+			<input type="hidden" name="submitted" value="true">
+			<button class="btn btn-block btn-default btn-primary" type="submit">Next</button>
+      		
       	</form>      	
     </div> <!-- /container -->
 

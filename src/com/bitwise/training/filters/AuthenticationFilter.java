@@ -41,10 +41,10 @@ public class AuthenticationFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) res;
         HttpSession session = request.getSession(false);
         String loginURI = request.getContextPath() + "/Login";
-
+       
         boolean loggedIn = session != null && session.getAttribute("username") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);
-
+        
         if (loggedIn || loginRequest) {
             chain.doFilter(request, response);
         } else {

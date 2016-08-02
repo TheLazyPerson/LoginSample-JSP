@@ -1,7 +1,10 @@
 package com.bitwise.training.utils;
 
 public class ResidenceInformation {
-	String street,city,pin,state;
+	String street;
+	String city;
+	String pin;
+	String state;
 	
 	public String getStreet() {
 		return street;

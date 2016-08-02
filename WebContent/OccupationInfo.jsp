@@ -29,9 +29,9 @@
 			<label for="inputDegree" class="sr-only">Designation:</label>
 			<input type="text" name="designation" id="inputDegree" class="form-control" placeholder="Designation" required>
 			<label for="inputSalary" class="sr-only">Salary:</label>
-			<input type="text" name="salary" id="inputSalary" class="form-control" placeholder="Salary" required>
+			<input type="number" name="salary" id="inputSalary" class="form-control" placeholder="Salary" required>
 			
-			<button class="btn btn-lg btn-primary " type="submit">Next</button>
+			<button class="btn btn-default btn-block btn-primary " type="submit">Next</button>
       	
       	</form>      	
     </div> <!-- /container -->

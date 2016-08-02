@@ -1,7 +1,8 @@
 package com.bitwise.training.utils;
 
 public class OccupationInformation {
-	String company,designation;
+	String company;
+	String designation;
 	int salary;
 	
 	public String getCompany() {

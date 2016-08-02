@@ -31,11 +31,11 @@
 			<label for="inputCity" class="sr-only">City</label>
 			<input type="text" name="city" id="inputCity" class="form-control" placeholder="City" required autofocus>
 			<label for="inputPinCode" class="sr-only">Pin Code:</label>
-			<input type="text" name="pin" id="inputPinCode" class="form-control" placeholder="Pin COde" required>
+			<input type="number" maxlength = "6" name="pin" id="inputPinCode" class="form-control" placeholder="Pin COde" required>
 			<label for="inputState" class="sr-only">State:</label>
 			<input type="text" name="state" id="inputState" class="form-control" placeholder="State" required>
 			
-			<button class="btn btn-lg btn-primary " type="submit">Next</button>
+			<button class="btn btn-block btn-default btn-primary " type="submit">Next</button>
       	
       	</form>      	
     </div> <!-- /container -->
